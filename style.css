@@ -75,24 +75,24 @@ input[type="radio"]{
   cursor: default;
   user-select: none;
 }
-.wrapper .form-container{
+.wrapper .div-container{
   width: 100%;
   overflow: hidden;
 }
-.form-container .form-inner{
+.div-container .div-inner{
   display: flex;
   width: 200%;
 }
-.form-container .form-inner form{
+.div-container .div-inner div{
   width: 50%;
   transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
 }
-.form-inner form .field{
+.div-inner div .field{
   height: 50px;
   width: 100%;
   margin-top: 20px;
 }
-.form-inner form .field input{
+.div-inner div .field input{
   height: 100%;
   width: 100%;
   outline: none;
@@ -103,41 +103,41 @@ input[type="radio"]{
   font-size: 17px;
   transition: all 0.3s ease;
 }
-.form-inner form .field input:focus{
+.div-inner div .field input:focus{
   border-color: #fc83bb;
   /* box-shadow: inset 0 0 3px #fb6aae; */
 }
-.form-inner form .field input::placeholder{
+.div-inner div .field input::placeholder{
   color: #999;
   transition: all 0.3s ease;
 }
-form .field input:focus::placeholder{
+div .field input:focus::placeholder{
   color: #b3b3b3;
 }
-.form-inner form .pass-link{
+.div-inner div .pass-link{
   margin-top: 5px;
 }
-.form-inner form .-link{
+.div-inner div .-link{
   text-align: center;
   margin-top: 30px;
 }
-.form-inner form .pass-link a,
-.form-inner form .-link a{
+.div-inner div .pass-link a,
+.div-inner div .-link a{
   color: #fa4299;
   text-decoration: none;
 }
-.form-inner form .pass-link a:hover,
-.form-inner form .-link a:hover{
+.div-inner div .pass-link a:hover,
+.div-inner div .-link a:hover{
   text-decoration: underline;
 }
-form .btn{
+div .btn{
   height: 50px;
   width: 100%;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
 }
-form .btn .btn-layer{
+div .btn .btn-layer{
   height: 100%;
   width: 300%;
   position: absolute;
@@ -146,10 +146,10 @@ form .btn .btn-layer{
   border-radius: 5px;
   transition: all 0.4s ease;;
 }
-form .btn:hover .btn-layer{
+div .btn:hover .btn-layer{
   left: 0;
 }
-form .btn button{
+div .btn button{
   height: 100%;
   width: 100%;
   z-index: 1;
